@@ -2,8 +2,8 @@ import os
 import subprocess
 import sys
 
-# jar tfv Eskulap.Pdf.Sign.jar | grep class | head
-# javap -verbose -cp Eskulap.Pdf.Sign.jar eskulap.pdf.sign.PdfSigner | head
+# jar tfv lib.jar | grep class | head
+# javap -verbose -cp lib.jar package.ClassName | head
 
 def find_all_jars(path):
 	for (path, dirs, files) in os.walk(path):
